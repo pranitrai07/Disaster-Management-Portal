@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #f7f8fc, #e1e6f2);
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: #2d3e50;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo p {
+    font-style: oblique;
+}
+
+.logo img {
+    width: 75px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background: url('background_image.png') no-repeat center center;
+    background-size: cover; /* This ensures the background image covers the entire div */
+    color: #fff;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text readability */
+    z-index: -1; /* Ensure the overlay is behind the text */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    z-index: 2; /* Ensure text appears above the overlay */
+}
+
+#hero p {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    z-index: 2;
+}
+
+.btn-primary {
+    padding: 0.75rem 2rem;
+    background-color: #d63030;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.btn-primary:hover {
+    background-color: #ff5252;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Disaster Updates */
+#disaster-updates {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.disaster-update {
+    background-color: #fefefe;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 1rem 0;
+}
+
+.disaster-update h3 {
+    color: #2d3e50;
+    margin-bottom: 1rem;
+}
+
+/* Map Section */
+.map-container {
+    margin-top: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #2d3e50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #34495e;
+}
+
+/* Contact Section */
+.contact-info p {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2d3e50;
+    color: #fff;
+    margin-top: 4rem;
+}
+
+/* Team Section */
+#team {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Space between cards */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+}
+
+.team-card {
+    background-color: #fefefe;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Set a width for the cards */
+    text-align: center;
+}
+
+.team-photo {
+    width: 100px; /* Set a width for the photos */
+    height: 100px; /* Set a height for the photos */
+    border-radius: 50%; /* Circular photos */
+    margin-bottom: 1rem; /* Space between photo and text */
+}

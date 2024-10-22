@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="ndma.png" alt="Logo">
+                <h1>National Disaster Management Authority (NDMA)</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#report">Report Disaster</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <div id="hero">
+            <h1>Disaster Updates & Response for India</h1>
+            <h1>Stay Vigilant</h1>
+            <p>Stay updated with real-time disaster information and report emergencies to ensure safety.</p>
+            <a href="#report" class="btn-primary">Report Disaster Now</a>
+        </div>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard">
+            <h2>Real-time Disaster Updates</h2>
+            <div id="disaster-updates">
+                <!-- Simulating disaster updates -->
+                <div class="disaster-update">
+                    <h3>Chennai Flood</h3>
+                    <p><strong>Time:</strong> 2024-10-21 15:30:00</p>
+                    <p><strong>Description:</strong> Heavy rainfall has caused severe flooding in several parts of Chennai. Rescue operations underway.</p>
+                </div>
+                <div class="disaster-update">
+                    <h3>Bangalore Earthquake</h3>
+                    <p><strong>Time:</strong> 2024-10-21 14:00:00</p>
+                    <p><strong>Description:</strong> A mild earthquake of magnitude 4.5 has been reported in Bangalore. No major damage reported.</p>
+                </div>
+                <div class="disaster-update">
+                    <h3>Hyderabad Fire</h3>
+                    <p><strong>Time:</strong> 2024-10-21 12:45:00</p>
+                    <p><strong>Description:</strong> A fire broke out in a residential area in Hyderabad. Firefighters are working to control the fire.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Report Disaster Section -->
+        <section id="report">
+            <h2>Report a Disaster</h2>
+            <form id="report-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter your location (e.g., Chennai)" required>
+                
+                <label for="disaster-type">Type of Disaster:</label>
+                <select id="disaster-type" name="disaster-type" required>
+                    <option value="earthquake">Earthquake</option>
+                    <option value="flood">Flood</option>
+                    <option value="fire">Fire</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Describe the situation" required></textarea>
+                
+                <button type="submit" class="btn-secondary">Submit Report</button>
+            </form>
+            <div id="form-response"></div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Disaster Relief Agencies</h2>
+            <div class="contact-info">
+                <p><strong>National Disaster Management Authority (NDMA)</strong></p>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: support@ndma.gov</p>
+
+                <p><strong>Disaster Relief Center</strong></p>
+                <p>Phone: 987-654-3210</p>
+                <p>Email: relief@sidrc.org</p>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team">
+            <h2>Our Team</h2>
+            <div class="team-cards">
+                <div class="team-card">
+                    <img src="pranit.png" alt="Pranit" class="team-photo">
+                    <h3>Pranit Rai</h3>
+                    <p>21BPS1078</p>
+                </div>
+                <div class="team-card">
+                    <img src="sovan.png" alt="Your Name" class="team-photo">
+                    <h3>Sovan Sinha</h3>
+                    <p>21BPS1465</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Disaster Management. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
